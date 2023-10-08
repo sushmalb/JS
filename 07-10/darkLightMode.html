@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #heading {
+        color: blue;
+      }
+      .darkMode {
+        background-color: black;
+      }
+      .lightMode {
+        background-color: white;
+      }
+      #about-me {
+        color: purple;
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body class="darkmode">
+    <h1 id="heading">Prashant !!!</h1>
+    <p id="about-me">
+      I am from Bangalore and I am currently persuing Full Stack Development
+      course with hero vired.
+    </p>
+
+    <button onclick="darkMode()">Dark Mode</button>
+    <button onclick="lightMode()">Light Mode</button>
+
+    <script>
+      function darkMode() {
+        document.getElementsByClassName("body").className = "darkMode";
+      }
+
+      function lightMode() {
+        document.getElementsByTagName('body').className = "lightMode";
+      }
+    </script>
+  </body>
+</html>

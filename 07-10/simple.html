@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #heading {
+        color: blue;
+      }
+      #about-me {
+        color: purple;
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading">Prashant !!!</h1>
+    <!-- <p id="about-me">
+      I am from Bangalore and I am currently persuing Full Stack Development
+      course with hero vired.
+    </p> -->
+
+    <button onclick="nameChange()">Click Me!!!</button>
+
+    <script>
+      function nameChange() {
+        let name1 = document.getElementById("heading").innerHTML;
+        if (name1 == "Prashant") {
+          document.getElementById("heading").innerHTML = "Seema";
+        } else {
+          document.getElementById("heading").innerHTML = "Prashant";
+        }
+      }
+    </script>
+  </body>
+</html>

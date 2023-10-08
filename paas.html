@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const upper_case="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const lower_case="abcdefghijklmnopqrstuvwxyz";
+        const number= "1234567890";
+        const special="!@#$%^&*()";
+        var answer ="";
+        var valid_options ="";
+        alert("Welcome to the password generator");
+        const upper= prompt("Do you want upperacses in the password Y/N ");
+        if(upper.toLowerCase()=="y"){
+            valid_options+=upper_case;
+        }
+        const lower= prompt("Do you want loweracses in the password Y/N ");
+        if(lower.toLowerCase()=="y"){
+            valid_options+=lower_case;
+        }
+        const num= prompt("Do you want numbers in the password Y/N ");
+        if(num=="y"){
+            valid_options+=number;
+        }
+        const sp= prompt("Do you want special characters in the password Y/N ");
+        if(sp=="y"){
+            valid_options+=special;
+        }
+        const length = prompt("How much length do you want(atleast 4 or more)");
+        if(length<4){
+            alert("Password not be less than 4")
+            const length = prompt("How much length do you want(atleast 4 or more)");
+        }
+        var remaining_length = length - answer.length;
+        for(let i=0; i<remaining_length;i++){
+            answer += randompassword(valid_options)
+        }
+        function randompassword(input_characters) {
+            var random_index = Math.floor(Math.random()*input_characters.length)
+            return input_characters[random_index]            
+        }
+        alert(answer);
+
+
+    </script>
+    
+</body>
+</html>
