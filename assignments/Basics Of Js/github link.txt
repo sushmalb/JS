@@ -1,0 +1,4 @@
+assignment on Basics of java
+
+https://github.com/sushmalb/JS/blob/main/assignments/Basics%20Of%20Js/script.js
+

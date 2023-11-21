@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun()">Click me</button>
+    <br><br>
+    <button id="btn-1">Event Click</button>
+    <br><br>
+    <button id="btn-2">Event Object</button>
+
+    <h1>Hi</h1>
+    <script>
+        const button = document.getElementById('btn-1')
+        // button.addEventListener('click', function(){
+        //     alert('button got clicked')
+        // })
+        function fun(){
+            alert('hello')
+            button.removeEventListener('click', fun)
+        }
+        button.addEventListener('click', fun)
+
+        const btn2 = document.getElementById('btn-2')
+        btn2.addEventListener('click', function(event){
+            console.log(event.type)
+        })
+    </script>
+</body>
+</html>

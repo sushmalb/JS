@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <input type="text" id="input-id" />
+    <h1 id="h1-text"></h1>
+    <button class="submit" onClick="addItems()">Add</button>
+
+    <ul id="list-id"></ul>
+
+    <script>
+      let inputEl = document.querySelector("#input-id");
+
+      let h1El = document.querySelector("#h1-text");
+      function addItems() {
+        let inputVal = inputEl.value;
+        h1El.textContent = inputVal;
+      }
+    </script>
+  </body>
+</html>

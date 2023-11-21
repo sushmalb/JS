@@ -1,1 +1,1 @@
-
+function display() {}

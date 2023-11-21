@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const userArr = [
+        { name: "Seema", age: 25 },
+        { name: "Gurpreet", age: 18 },
+        { name: "Mohit", age: 28 },
+      ];
+
+      for (let i = 0; i < userArr.length; i++) {
+        if (userArr[i].age < 25) {
+          console.log(`${userArr[i].name} has won free tickets`);
+        }
+      }
+    </script>
+  </body>
+</html>

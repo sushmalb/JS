@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax</title>
+  </head>
+  <body>
+    <script>
+      //ajax api call=>>>>some data
+      //some data I will be prininting in console
+      //the moment I get te data from the api ,
+      //if I can trigger the print statement
+      //can we trigger a function based on anevent
+      //if we can trigger an event when the data arrives then we can trigger a function
+      //xmlhttpreques
+      const xhr = new XMLHttpRequest();
+      xhr.open("GET", "https://reqres.in/api/users?page=2");
+      xhr.send();
+      xhr.onload = function () {
+        //console.log(xhr.responseText);
+        response = xhr.responseText;
+        const data = JSON.parse(response);
+        console.log(data);
+
+        for (let i = 0; i < datadata.length; i++) {
+          const email = data[i];
+          console.log(email);
+        }
+      };
+    </script>
+  </body>
+</html>

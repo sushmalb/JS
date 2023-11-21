@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" onclick="xyz()">Click</button>
+    <div id="xyz">
+        Hi
+    </div>
+    <div id="superlist"></div>
+    <script>
+        function xyz(){
+            for(let i = 0; i<100; i++){
+                document.getElementById('xyz').innerText = i
+            }
+        }
+        function abc(){
+            const el1 = document.getElementById('xyz')
+            for(let i=0; i<100;i++){
+                el1.innerText = i
+            }
+        }
+        // const frag = document.createDocumentFragment()
+        // for(let i=0; i<100; i++){
+        //     const li = document.createElement('li')
+        //     li.textContent = `Item ${i+1}`;
+        //     frag.appendChild(li)
+        // }
+        // document.getElementById('superlist').appendChild(frag)
+    </script>
+</body>
+</html>
+<!-- 
+    DOM Reflow : Process of recalculing layout of page when any element changes
+    and Repaint: redrawing parts of screen which have changed
+
+    Document Fragments: 
+ -->

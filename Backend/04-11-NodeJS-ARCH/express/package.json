@@ -1,0 +1,14 @@
+{
+  "name": "04-11-nodejs-arch",
+  "version": "1.0.0",
+  "description": "first express",
+  "main": "readingFileAndThenWriting.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

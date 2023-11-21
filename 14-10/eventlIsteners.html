@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .largeFont {
+        font-size: 32px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 id="head-1">This is a heading</h3>
+
+    <script>
+      const h3 = document.querySelector("#head-1");
+      // function changeFontSize() {
+      //   h3.style.fontSize = "32px";
+      //h3.removeEventListener("mouseout", changeFontSize);
+      // }
+
+      // h3.addEventListener("mouseover", changeFontSize);
+
+      function changeToBiggerFont() {
+        h3.classList.add("largeFont");
+      }
+      function changeToInitialFont() {
+        h3.classList.remove("largeFont");
+      }
+      h3.addEventListener("mouseover", changeToBiggerFont);
+      h3.addEventListener("mouseout", changeToInitialFont);
+    </script>
+  </body>
+</html>

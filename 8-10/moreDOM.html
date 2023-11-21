@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="demo-1">
+      <h1 class="dummy-head-1">Learning JS</h1>
+    </div>
+
+    <div class="demo-2">
+      <h1 class="dummy-head-2">DOM</h1>
+      <p class="dummy-para-1"></p>
+    </div>
+
+    <ul id="dummy-list">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+
+    <button>click me</button>
+    <button>click me</button>
+    <script>
+      let el = document.getElementById("dummy-list");
+      console.log(el.innerHTML); // Gives the HTML
+      console.log(el.innerText); // doesnt maintain the structure
+      console.log(el.textContent); // maintaines the structure
+
+      console.log(document.getElementsByTagName("button"));
+      const button1 = document.getElementsByTagName("button")[0];
+      button1.setAttribute();
+    </script>
+  </body>
+</html>
