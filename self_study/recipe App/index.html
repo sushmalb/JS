@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe app</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <form class="search">
+          <input
+            type="text"
+            class="seacrh__field"
+            placeholder="Search over 1000 recipes"
+          />
+          <button class="btn search__btn">Search</button>
+        </form>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <button class="nav__btn nav__btn--add--recipe">Add Recipe</button>
+            </li>
+            <li class="nav__item">
+              <button class="nav__btn nav__btn--bookmarks">Bookmarks</button>
+              <div class="bookmarks"></div>
+              <ul class="bookmarks__list">
+                <div class="message">
+                  <p>No bookmarks yet. Find a nice recipe and bookmark it!!</p>
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </body>
+</html>
